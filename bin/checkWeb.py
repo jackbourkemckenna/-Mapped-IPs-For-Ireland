@@ -23,7 +23,7 @@ def main():
             c.request("HEAD", '/')
             if c.getresponse().status == 200:
                 
-                with open('../lists/publicIP.txt','a+b') as file1:
+                with open('../lists/ServeCentric.txt','a+b') as file1:
                     file1.write(arr+'\n')
             
                 print "written to file "+arr
